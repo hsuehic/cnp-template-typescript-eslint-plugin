@@ -1,4 +1,5 @@
 import { TSESLint } from '@typescript-eslint/experimental-utils';
+
 import rule from '../../src/rules/example-rule';
 
 new TSESLint.RuleTester().run('example-rule', rule, {

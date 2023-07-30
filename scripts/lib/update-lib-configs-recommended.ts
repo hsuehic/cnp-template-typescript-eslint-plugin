@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+
 import { CLIEngine } from 'eslint';
+
 import { pluginId } from './plugin-id';
 import { rules } from './rules';
 

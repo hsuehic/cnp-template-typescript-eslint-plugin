@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+
 import { CLIEngine } from 'eslint';
+
 import { rules } from './rules';
 
 const filePath = path.resolve(__dirname, '../../src/index.ts');

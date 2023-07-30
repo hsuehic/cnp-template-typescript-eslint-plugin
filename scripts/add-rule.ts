@@ -1,12 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+
 import { pluginId } from './lib/plugin-id';
+
 (() => {
   const ruleId = process.argv[2];
 
   // Require rule ID.
   if (!ruleId) {
-    console.error('Usage: npm run add-rule <RULE_ID>');
     process.exitCode = 1;
     return;
   }
@@ -18,10 +19,6 @@ import { pluginId } from './lib/plugin-id';
   // Overwrite check.
   for (const filePath of [docPath, rulePath, testPath]) {
     if (fs.existsSync(filePath)) {
-      console.error(
-        '%o has existed already.',
-        path.relative(process.cwd(), filePath)
-      );
       process.exitCode = 1;
       return;
     }

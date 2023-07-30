@@ -1,8 +1,9 @@
 import fs from 'fs';
 import path from 'path';
+
 import { pluginId } from './plugin-id';
-import { rules } from './rules';
 import type { RuleInfo } from './rules';
+import { rules } from './rules';
 
 type ListFormatOptions = {
   type?: 'conjunction' | 'disjunction' | 'unit';
@@ -10,6 +11,7 @@ type ListFormatOptions = {
   localeMatcher?: 'lookup' | 'best fit';
 };
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Intl {
   class ListFormat {
     constructor(locale: string, options: ListFormatOptions);
@@ -28,7 +30,7 @@ const listFormatter = new Intl.ListFormat('en', { type: 'conjunction' });
  * Render the document header of a given rule.
  */
 function renderHeader(rule: RuleInfo): string {
-  const lines = [`# ${rule.id}`, `> ${rule.description}`];
+  const lines = [`# ${rule.id}`, `> ${rule.description || ''}`];
 
   if (rule.recommended) {
     lines.push(
