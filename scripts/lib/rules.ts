@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { TSESLint } from '@typescript-eslint/experimental-utils';
+import { TSESLint } from '@typescript-eslint/utils';
 
 import { pluginId } from './plugin-id';
 
@@ -13,7 +13,7 @@ export type RuleInfo = {
   name: string;
   category?: string;
   description?: string;
-  recommended?: false | 'error' | 'warn';
+  recommended?: false | 'error' | 'warn' | 'strict';
   deprecated: boolean;
   fixable: boolean;
   replacedBy: string[];
