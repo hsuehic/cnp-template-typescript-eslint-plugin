@@ -1,10 +1,19 @@
-**forked from [mysticatea/template-eslint-plugin](https://github.com/mysticatea/template-eslint-plugin)**
+# cnp-template-typescript-eslint-plugin
 
----
+[![Release](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/release.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/release.yaml/badge.svg?branch=main)
+[![Testing](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/test.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/test.yaml/badge.svg?branch=main)
+[![Linting](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/lint.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/lint.yaml/badge.svg?branch=main)
+[![Build](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/build.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/build.yaml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin/branch/main/graph/badge.svg?token=38H26EP6UM)](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin)
 
-This is a trial of [GitHub Repository Template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
+> A bolierplate for create [eslint](https://github.com/eslint/eslint) plugin with typescript;
+> A bolierplate for that can be used by [cnp-template-typescript-eslint-plugin](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin)
 
-Please update `package.json` after you created new repository with this template.
+## Usage
+
+```bash
+npx cnp-template-typescript-eslint-plugin --template hsuehic/cnp-template-typescript-eslint-plugin
+```
 
 **File Structure**:
 
@@ -48,7 +57,7 @@ A template for ESLint plugins.
 Use [npm](https://www.npmjs.com/) or a compatibility tool to install.
 
 ```
-$ npm install --save-dev eslint eslint-plugin-xxxx
+npm install --save-dev eslint eslint-plugin-xxxx
 ```
 
 ### Requirements
@@ -58,7 +67,7 @@ $ npm install --save-dev eslint eslint-plugin-xxxx
 
 ## Usage
 
-Write your config file such as `.eslintrc.yml`.
+Write your config file such as `.eslintrc.yaml`.
 
 ```yml
 plugins:
