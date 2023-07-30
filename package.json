@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/???/eslint-plugin-xxxx.git"
+    "url": "git+https://github.com/hsuehic/cnp-template-typescript-eslint-plugin.git"
   },
   "keywords": [
     "typescript",
@@ -69,7 +69,7 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/???/eslint-plugin-xxxx/issues"
+    "url": "https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/issues"
   },
-  "homepage": "https://github.com/???/eslint-plugin-xxxx#readme"
+  "homepage": "https://github.com/hsuehic/cnp-template-typescript-eslint-plugin#readme"
 }
