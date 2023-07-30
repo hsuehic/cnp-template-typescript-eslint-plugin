@@ -1,7 +1,7 @@
 {
   "name": "cnp-template-typescript-eslint-plugin",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A bolierplate for create [eslint](https://github.com/eslint/eslint) plugin with typescript;A bolierplate for that can be used by [create-npm-package](https://github.com/hsuehic/create-npm-package)",
   "engines": {
     "node": ">=8.10.0"
   },

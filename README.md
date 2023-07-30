@@ -7,6 +7,7 @@
 [![codecov](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin/branch/main/graph/badge.svg?token=38H26EP6UM)](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin)
 
 > A bolierplate for create [eslint](https://github.com/eslint/eslint) plugin with typescript;
+>
 > A bolierplate for that can be used by [create-npm-package](https://github.com/hsuehic/create-npm-package)
 
 ## Usage
