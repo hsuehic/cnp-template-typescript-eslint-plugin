@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-xxx",
+  "name": "cnp-template-typescript-eslint-plugin",
   "version": "1.0.0",
   "description": "",
   "engines": {
