@@ -30,12 +30,12 @@
     "eslint": ">=8.45.0"
   },
   "dependencies": {
+    "@changesets/cli": "^2.26.2",
     "@typescript-eslint/experimental-utils": "^4.20.0"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.8",
     "@types/jest": "^26.0.22",
-    "changesets": "^1.0.2",
     "eslint": "^8.45.0",
     "eslint-config-cnp": "^0.0.3",
     "husky": "^8.0.0",
