@@ -1,10 +1,4 @@
-# cnp-template-typescript-eslint-plugin
-
-[![Release](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/release.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/release.yaml/badge.svg?branch=main)
-[![Testing](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/test.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/test.yaml/badge.svg?branch=main)
-[![Linting](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/lint.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/lint.yaml/badge.svg?branch=main)
-[![Build](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/build.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/build.yaml/badge.svg?branch=main)
-[![codecov](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin/branch/main/graph/badge.svg?token=38H26EP6UM)](https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin)
+<!--instructions-of-template--># cnp-template-typescript-eslint-plugin
 
 > A bolierplate for create [eslint](https://github.com/eslint/eslint) plugin with typescript;
 >
@@ -13,7 +7,7 @@
 ## Usage
 
 ```bash
-npx create-npm-packages --template hsuehic/cnp-template-typescript-eslint-plugin
+npx create-npm-packages --template hsuehic/cnp-template-typescript-eslint-plugin-eslint-plugin
 ```
 
 **File Structure**:
@@ -41,15 +35,18 @@ Below is an example of README.
 
 ---
 
-# eslint-plugin-xxxx (template)
+<!--instructions-of-template-->
 
-<!--
-[![npm version](https://img.shields.io/npm/v/eslint-plugin-xxxx.svg)](https://www.npmjs.com/package/eslint-plugin-xxxx)
-[![Downloads/month](https://img.shields.io/npm/dm/eslint-plugin-xxxx.svg)](http://www.npmtrends.com/eslint-plugin-xxxx)
-[![Build Status](https://travis-ci.org/mysticatea/eslint-plugin-xxxx.svg?branch=master)](https://travis-ci.org/mysticatea/eslint-plugin-xxxx)
-[![Coverage Status](https://codecov.io/gh/mysticatea/eslint-plugin-xxxx/branch/master/graph/badge.svg)](https://codecov.io/gh/mysticatea/eslint-plugin-xxxx)
-[![Dependency Status](https://david-dm.org/mysticatea/eslint-plugin-xxxx.svg)](https://david-dm.org/mysticatea/eslint-plugin-xxxx)
--->
+# <!--package-name-->my-package-name<!--package-name-->
+
+[![npm package][npm-img]][npm-url]
+[![Downloads][downloads-img]][downloads-url]
+[![Lint Status][lint-img]][lint-url]
+[![Test Status][test-img]][test-url]
+[![Build Status][build-img]][build-url]
+[![Release Status][release-img]][release-url]
+[![Issues][issues-img]][issues-url]
+[![Code Coverage][codecov-img]][codecov-url]
 
 A template for ESLint plugins.
 
@@ -58,7 +55,7 @@ A template for ESLint plugins.
 Use [npm](https://www.npmjs.com/) or a compatibility tool to install.
 
 ```
-npm install --save-dev eslint eslint-plugin-xxxx
+npm install --save-dev eslint my-package-name
 ```
 
 ### Requirements
@@ -68,20 +65,29 @@ npm install --save-dev eslint eslint-plugin-xxxx
 
 ## Usage
 
-Write your config file such as `.eslintrc.yaml`.
+Write your config file such as `.eslintrc.json`.
 
-```yml
-plugins:
-  - xxxx
-rules:
-  xxxx/example-rule: error
+```json
+{
+  "plugins": ["xxxx"],
+  "rules": {
+    "xxxx/example-rule": "error"
+  }
+}
 ```
 
 See also [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
 
 ## Configs
 
-- `xxxx/recommended` ... enables the recommended rules.
+Write your config file such as `.eslintrc.json` to enables the recommended rules.
+
+```json
+{
+  "extends": ["plugin:xxxx/recommended"],
+  "plugins": ["xxxx"]
+}
+```
 
 ## Rules
 
@@ -114,3 +120,24 @@ See also [ESLint Contribution Guide](https://eslint.org/docs/developer-guide/con
 - `npm test` runs tests.
 - `npm run update` updates the package version. And it updates `src/configs/recommended.ts`, `lib/index.ts`, and `README.md`'s rule table. See also [npm version CLI command](https://docs.npmjs.com/cli/version).
 - `npm run add-rule <RULE_ID>` creates three files to add a new rule.
+
+<!--badge-variables-->
+
+[lint-img]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/lint.yaml/badge.svg
+[lint-url]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/workflows/lint.yaml
+[test-img]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/test.yaml/badge.svg
+[test-url]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/workflows/test.yaml
+[build-img]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/build.yaml/badge.svg
+[build-url]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/workflows/build.yaml
+[release-img]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/actions/workflows/release.yaml/badge.svg
+[release-url]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/workflows/release.yaml
+[downloads-img]: https://img.shields.io/npm/dt/cnp-template-typescript-eslint-plugin
+[downloads-url]: https://www.npmtrends.com/cnp-template-typescript-eslint-plugin
+[npm-img]: https://img.shields.io/npm/v/cnp-template-typescript-eslint-plugin
+[npm-url]: https://www.npmjs.com/package/cnp-template-typescript-eslint-plugin
+[issues-img]: https://img.shields.io/github/issues/hsuehic/cnp-template-typescript-eslint-plugin
+[issues-url]: https://github.com/hsuehic/cnp-template-typescript-eslint-plugin/issues
+[codecov-img]: https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin/branch/main/graph/badge.svg?token=38H26EP6UM
+[codecov-url]: https://codecov.io/gh/hsuehic/cnp-template-typescript-eslint-plugin
+
+<!--badge-variables-->
